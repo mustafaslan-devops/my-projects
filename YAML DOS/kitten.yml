@@ -5,11 +5,11 @@ Resources:
   myEC2Instance:
     Type: AWS::EC2::Instance
     Properties:
-      KeyName: keyaslan 
+      KeyName: firstkey 
       ImageId: ami-05fa00d4c63e32376
       InstanceType: t2.micro
       SecurityGroupIds: 
-        - http-shh-sec-grp
+        - first-security-group
       UserData: !Base64 |
         #!/bin/bash 
         yum update -y

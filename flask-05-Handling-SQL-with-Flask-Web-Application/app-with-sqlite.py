@@ -42,7 +42,6 @@ def find_emails(keyword):
     user_emails = [(row[0], row[1]) for row in result]
     if not any(user_emails):
         user_emails = [("Not Found", "Not Found")]
-    return user_emails
 
 
 # - Write a function named `insert_email` which adds new email to users table the db.
@@ -100,5 +99,5 @@ if __name__=='__main__':
     app.run(host='0.0.0.0', port=80)
     
 
-    
+
 
